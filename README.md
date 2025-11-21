@@ -36,7 +36,7 @@ Across three islands:
 - Male vs female body mass
 - Male vs female bill dimensions
 #### ✔ Island-based comparisons
-- ariation of bill length between islands
+- Variation of bill length between islands
 - Distribution differences via boxplots
 #### ✔ Grouped statistics
 - Used groupby() and agg() to compute:
@@ -67,6 +67,28 @@ Across three islands:
 - Interpretation of MAE:-
 
     The model predicts bill length with high accuracy, typically within 2 mm of the true value.
+## ⚙️ Pipeline Implementation (Scikit-Learn)
+To improve code cleanliness, prevent data leakage, and automate preprocessing, I implemented a full end-to-end Scikit-Learn 
+Pipeline for the Penguins dataset.
+
+#### Implemented :-
+ - Pipeline
+ - ColumnTransformer
+## 📈 Pipeline Results
+- 🔹 Decision Tree Regressor
+        
+        Best max_leaf_nodes = 5 -> MAE ≈ 1.61 mm
+- 🔹 Random Forest Regressor
+
+        Default model MAE ≈ 1.66 mm
+
+### 🧠 Interpretation
+- Simpler models (shallow Decision Trees) performed better than Random Forest on this small dataset.
+
+- Pipelines helped maintain cleaner code and consistent preprocessing during model comparison.
+
+- MAE around 1.6–2.0 mm means the model predicts bill length within ~4–5% error, which is strong performance.
+
 
 ## 🛠 Technologies Used
 - Python
@@ -76,7 +98,6 @@ Across three islands:
 - Jupyter Notebook
 - Sklearn
 ## 🚀 Future Work
-- Pipelines
 - Model comparison
 - Feature importance
 ## Thank You for Reading
