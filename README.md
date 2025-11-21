@@ -53,10 +53,30 @@ Across three islands:
     
     The dataset shows clear species and sex-based physical differences, useful for biological or ecological studies.
 
+## 🤖 Machine Learning Summary
+- Problem: Predict bill_length_mm
+
+- Preprocessing steps
+    -  Applying SimpleImputer on numerical and categorical data
+    - Applying OneHotEncoder on Categorical data
+- Models used
+    - Decision Tree Regressor
+    - Random Forest Regressor
+- Best performance
+    - Decision Tree Regressor
+- Interpretation of MAE:-
+
+    The model predicts bill length with high accuracy, typically within 2 mm of the true value.
+
 ## 🛠 Technologies Used
 - Python
 - Pandas
 - NumPy
 - Seaborn
 - Jupyter Notebook
+- Sklearn
+## 🚀 Future Work
+- Pipelines
+- Model comparison
+- Feature importance
 ## Thank You for Reading
