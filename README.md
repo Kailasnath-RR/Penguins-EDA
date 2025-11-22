@@ -88,6 +88,13 @@ Pipeline for the Penguins dataset.
 - Pipelines helped maintain cleaner code and consistent preprocessing during model comparison.
 
 - MAE around 1.6–2.0 mm means the model predicts bill length within ~4–5% error, which is strong performance.
+## Cross-Validation Results
+A simple train–test split initially gave an MAE of ~1.66, but 5-fold cross-validation showed a more realistic MAE of ~2.118. This confirms that cross-validation provides a more reliable estimate of the model’s true generalization performance.
+| Model Variant | Evaluation Method | MAE |
+|--------------|-------------------|-----|
+| Decision Tree (default) | Train–test split | ~1.66 |
+| Decision Tree (default) | 5-fold CV | ~2.34 |
+| Decision Tree (tuned: max_leaf_nodes = 50) | 5-fold CV | ~2.118 |
 
 
 ## 🛠 Technologies Used
